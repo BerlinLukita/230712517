@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8" />
+    <title>Registrasi Seminar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <p class="course">PEMROGRAMAN WEB DASAR 26/27</p>
+            <h1>Seminar Registration</h1>
+            <p class="intro">
+                Lengkapi data berikut untuk mendaftarkan diri
+                pada kegiatan seminar pilihanmu.
+            </p>
+        </div>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <table class="form-table">
+                <tr>
+                    <th colspan="2" class="section-title">
+                        Data Peserta
+                    </th>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <label for="nama"><strong>Nama Lengkap</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nama" name="nama"
+                            size="30" class="text-input" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <label for="email"><strong>Alamat Email</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="email"
+                            size="30" class="text-input" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <label for="nim"><strong>Nomor Induk Mahasiswa</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nim" name="nim"
+                            size="30" class="text-input" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <label for="prodi"><strong>Program Studi</strong></label>
+                    </td>
+                    <td>
+                        <select id="prodi" name="prodi" class="select-input">
+                            <option>Informatika</option>
+                            <option>Sistem Informasi</option>
+                            <option>Teknik Industri</option>
+                            <option>Manajemen</option>
+                            <option>Akuntansi</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2" class="section-title">
+                        Detail Seminar
+                    </th>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <strong>Kategori Tiket</strong>
+                    </td>
+                    <td>
+                        <div class="choice-group">
+                            <p>
+                                <input type="radio" id="reguler" name="tiket"
+                                    value="Reguler" />
+                                <label for="reguler">Reguler</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="vip" name="tiket"
+                                    value="VIP" />
+                                <label for="vip">VIP</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="online" name="tiket"
+                                    value="Online" />
+                                <label for="online">Online</label>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <strong>Topik yang Diminati</strong>
+                    </td>
+                    <td>
+                        <div class="choice-group">
+                            <p>
+                                <input type="checkbox" id="ai" name="topik"
+                                    value="Artificial Intelligence" />
+                                <label for="ai">Artificial Intelligence (AI)</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="data" name="topik"
+                                    value="Data Science" />
+                                <label for="data">Data Science dan Analitik</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="cyber" name="topik"
+                                    value="Cyber Security" />
+                                <label for="cyber">Cyber Security</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="cloud" name="topik"
+                                    value="Cloud Computing" />
+                                <label for="cloud">Cloud Computing</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="web" name="topik"
+                                    value="Web Development" />
+                                <label for="web">Web Development</label>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <label for="jam"><strong>Jadwal Seminar</strong></label>
+                    </td>
+                    <td>
+                        <select id="jam" name="jam" class="select-input">
+                            <option>08.00 - 10.00</option>
+                            <option>10.00 - 12.00</option>
+                            <option>13.00 - 15.00</option>
+                            <option>15.00 - 17.00</option>
+                            <option>19.00 - 21.00</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2" class="section-title">
+                        Pembayaran dan Pertanyaan
+                    </th>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <strong>Metode Pembayaran</strong>
+                    </td>
+                    <td>
+                        <div class="choice-group">
+                            <p>
+                                <input type="radio" id="qris" name="pembayaran"
+                                    value="QRIS" />
+                                <label for="qris">QRIS</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="transfer" name="pembayaran"
+                                    value="Transfer Bank" />
+                                <label for="transfer">Transfer Bank</label>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <label for="pertanyaan">
+                            <strong>Pertanyaan untuk Pemateri</strong>
+                        </label>
+                    </td>
+                    <td>
+                        <textarea id="pertanyaan" name="pertanyaan"
+                            rows="6" cols="30"></textarea>
+                        <p class="helper-text">
+                            Tuliskan hal yang ingin kamu tanyakan saat seminar.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">
+                        <label for="bukti"><strong>Unggah Bukti Pembayaran</strong></label>
+                    </td>
+                    <td>
+                        <input type="file" id="bukti" name="bukti"
+                            accept="image/gif, image/jpeg, image/png" />
+                        <p class="helper-text">
+                            Format yang didukung: GIF, JPG, atau PNG.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-cell">
+                        <input type="submit" name="simpan"
+                            value="Kirim Pendaftaran" class="submit-button" />
+                        <input type="reset" value="Kosongkan Form"
+                            class="reset-button" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="footer">
+           <p><strong>PEMROGRAMAN WEB DASAR</strong></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Tech Competition - Pendaftaran Lomba</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+            <p class="course">PEMROGRAMAN WEB DASAR 26/27</p>
+            <h1>TECH <span>COMPETITION</span></h1>
+            <h2>Formulir Pendaftaran Lomba</h2>
+            <p class="intro">
+                Tunjukkan kreativitas, kembangkan ide, dan wujudkan
+                inovasimu melalui kompetisi teknologi.
+            </p>
+            <div class="hero-note">
+                <strong>SAATNYA BERKOMPETISI</strong>
+                <p>Ide - Inovasi - Kolaborasi</p>
+            </div>
+        </div>
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <div class="form-section team-section">
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <div>
+                        <h3>Informasi Tim</h3>
+                        <p>Lengkapi identitas tim dan informasi peserta.</p>
+                    </div>
+                </div>
+
+                <table class="form-table">
+                    <tr>
+                        <td class="label-cell">
+                            <label for="namaTim"><strong>Nama Tim</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="namaTim" name="namaTim"
+                                class="text-input"
+                                placeholder="Masukkan nama tim Anda" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell">
+                            <label for="namaKetua"><strong>Ketua Tim</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="namaKetua" name="namaKetua"
+                                class="text-input"
+                                placeholder="Masukkan nama ketua tim" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell">
+                            <label for="jumlahAnggota">
+                                <strong>Total Anggota</strong>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="jumlahAnggota"
+                                name="jumlahAnggota" class="text-input"
+                                placeholder="Contoh: 3" />
+                            <p class="helper-text">
+                                Masukkan jumlah peserta dalam tim.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell">
+                            <label for="prodi"><strong>Program Studi</strong></label>
+                        </td>
+                        <td>
+                            <select id="prodi" name="prodi" class="select-input">
+                                <option>Informatika</option>
+                                <option>Sistem Informasi</option>
+                                <option>Teknik Industri</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-section competition-section">
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <div>
+                        <h3>Pilihan Kompetisi</h3>
+                        <p>Tentukan kategori dan bidang lomba yang ingin diikuti.</p>
+                    </div>
+                </div>
+
+                <table class="form-table">
+                    <tr>
+                        <td class="label-cell">
+                            <strong>Format Peserta</strong>
+                        </td>
+                        <td>
+                            <div class="choice-group">
+                                <p>
+                                    <input type="radio" id="individu"
+                                        name="kategori" value="Individu" />
+                                    <label for="individu"><strong>Individu</strong></label>
+                                </p>
+                                <p class="choice-description">
+                                    Peserta mendaftar secara individu.
+                                </p>
+                                <p>
+                                    <input type="radio" id="kelompok"
+                                        name="kategori" value="Kelompok" />
+                                    <label for="kelompok"><strong>Kelompok</strong></label>
+                                </p>
+                                <p class="choice-description">
+                                    Peserta berkompetisi dalam satu tim.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell">
+                            <strong>Bidang Lomba</strong>
+                        </td>
+                        <td>
+                            <div class="choice-group">
+                                <p>
+                                    <input type="checkbox" id="programming"
+                                        name="bidang" value="Programming" />
+                                    <label for="programming">Programming</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="uiux"
+                                        name="bidang" value="UI/UX Design" />
+                                    <label for="uiux">UI/UX Design</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="karyaTulis"
+                                        name="bidang" value="Karya Tulis" />
+                                    <label for="karyaTulis">Karya Tulis Ilmiah</label>
+                                </p>
+                            </div>
+                            <p class="helper-text">
+                                Pilih bidang sesuai minat dan kemampuan.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-section project-section">
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+                    <div>
+                        <h3>Informasi Karya</h3>
+                        <p>Jelaskan gagasan dan lampirkan berkas hasil karya.</p>
+                    </div>
+                </div>
+
+                <table class="form-table">
+                    <tr>
+                        <td class="label-cell">
+                            <label for="deskripsi">
+                                <strong>Deskripsi Karya</strong>
+                            </label>
+                        </td>
+                        <td>
+                            <textarea id="deskripsi" name="deskripsi"
+                                rows="7" cols="30"
+                                placeholder="Jelaskan ide, tujuan, dan manfaat karya Anda..."></textarea>
+                            <p class="helper-text">
+                                Uraikan konsep dan keunggulan karya yang diajukan.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-cell">
+                            <label for="fileKarya">
+                                <strong>Unggah Berkas Karya</strong>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="file" id="fileKarya"
+                                name="fileKarya" class="file-input" />
+                            <p class="helper-text">
+                                Pilih berkas karya yang akan dikumpulkan.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="submit-area">
+                <input type="submit" name="daftar"
+                    value="Daftarkan Tim" class="submit-button" />
+                <input type="reset" value="Reset Formulir"
+                    class="reset-button" />
+            </div>
+        </form>
+
+        <div id="footer">
+            <p><strong>TECH COMPETITION</strong></p>
+            <p>Berani Berinovasi, Siap Berkompetisi.</p>
+        </div>
+
+    </div>
+</body>
+</html>
